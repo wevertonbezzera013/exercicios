@@ -19,16 +19,18 @@
             pulalinha();
         }
 
-        function calculaimc(altura, peso) {
-            return peso/(altura * altura);
-        }
-        
-       var nome = prompt("Informe o seu nome: ")
-       var imcaltura = prompt(nome + "Informe sua altura: ");
-       var imcpeso = prompt(nome + "Iinforme seu peso: ");
-       var imc = calculaimc(imcaltura, imcpeso);
+        var vitorias = parseInt(prompt("Num de vitorias: "));
+        alert(vitorias * 3);
+        var empate = parseInt(prompt("Num de empate: "));
+        var pontos = (vitorias*3) + empate;
 
-       mostra(imc);
+        mostra("Os pontos do seu time sao: " + pontos);
+        if (pontos > 28){
+            mostra("Seu time, esta melhor");
+        }
+        if (pontos < 28){
+            mostra("Seu time, esta pior");
+        }
     </script>
 </body>
 </html>
