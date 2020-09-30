@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste</h1>
+    <br>
+    
+    <script>
+        function pulalinha() {
+            document.write("<br>");
+        }
+
+        function mostra(ronaldo) {
+            document.write(ronaldo)
+            pulalinha();
+        }
+
+        function calculaimc(altura, peso) {
+            return peso/(altura * altura);
+        }
+        
+       var nome = prompt("Informe o seu nome: ")
+       var imcaltura = prompt(nome + "Informe sua altura: ");
+       var imcpeso = prompt(nome + "Iinforme seu peso: ");
+       var imc = calculaimc(imcaltura, imcpeso);
+
+       mostra(imc);
+    </script>
+</body>
+</html>
