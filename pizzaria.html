@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Laranjas</title>
+    </head>
+    <body>
+        <script>
+            function valor(){
+                return (50.00 - 30.00)/8.9;
+            }
+            function valor2(){
+                return 50.00 - 30.00;
+            }
+
+            var pizza = prompt("Qual pizza deseja encomendar? ");
+
+            var imposto = Math.round((valo())*100);
+            var lucro = Math.round((valor2())*100);
+            document.write("Para a pizza " + pizza + " o lucro líquido é de R$ " + lucro + " e o imposto é de "+ imposto);
+
+        </script>
+    </body>
+</html>
