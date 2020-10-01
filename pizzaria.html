@@ -16,9 +16,11 @@
 
             var pizza = prompt("Qual pizza deseja encomendar? ");
 
-            var imposto = Math.round((valo())*100);
-            var lucro = Math.round((valor2())*100);
-            document.write("Para a pizza " + pizza + " o lucro líquido é de R$ " + lucro + " e o imposto é de "+ imposto);
+            if (pizza == "p"){
+                var imposto = Math.round((valo())*100);
+                var lucro = Math.round((valor2())*100);
+                document.write("Para a pizza " + pizza + " o lucro líquido é de R$ " + lucro + " e o imposto é de "+ imposto);
+            }
 
         </script>
     </body>
