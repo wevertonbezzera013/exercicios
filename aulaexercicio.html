@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="apertar()">botao</button>
+    <script>
+        var list = ["A", "B", "C"];
+        var i = 0;
+
+        while (i <list.length){
+            document.write("<h1>" + list[i] + "</h1><br>")
+            i = i + 1;
+        }
+        
+        function mostra(){
+            
+            var novo = prompt("Voce deseja mais um botao? ");
+
+            if (novo == "Sim"){
+                <button onclick="apertar()">botao</button>
+            }
+            else if (novo == "Nao"){
+                break;
+            }
+        }
+        mostra();
+
+        function apertar(){
+            alert(botao);
+        }
+    </script>
+</body>
+</html>
