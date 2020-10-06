@@ -1,37 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <button onclick="apertar()">botao</button>
-    <script>
-        var list = ["A", "B", "C"];
-        var i = 0;
-
-        while (i <list.length){
-            document.write("<h1>" + list[i] + "</h1><br>")
-            i = i + 1;
-        }
-        
-        function mostra(){
-            
-            var novo = prompt("Voce deseja mais um botao? ");
-
-            if (novo == "Sim"){
-                <button onclick="apertar()">botao</button>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            var lista = ["A", "B", "C", "D"]
+            var i = 0;
+            function alerta(){
+                alert(lista[i])
             }
-            else if (novo == "Nao"){
-                break;
-            }
-        }
-        mostra();
 
-        function apertar(){
-            alert(botao);
-        }
-    </script>
-</body>
+            function criabotao() {
+                while (i<lista.length){
+                    document.write('<button onclick="alert(' + "'" + lista[i] + "'" + ')">' + lista[i] + '</button><br><br>');
+                    i++
+                }
+            }
+            criabotao();
+        </script>
+    </head>
+    <body>
+
+    </body>
 </html>
