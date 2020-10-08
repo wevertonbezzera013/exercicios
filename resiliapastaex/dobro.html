@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+            <Script>
+                function dobro(){
+                    return n * 2
+                }
+                function metade(){
+                    return n / 2
+                }
+                function mostra(conta) {
+                document.write(conta);
+                }
+
+                var n = prompt("Digite um valor: ");
+                var resultado = dobro(n);
+                var resultado2 = metade(n);
+                var nome = prompt("Digite seu nome: ")
+
+                mostra("O dobro é " + resultado);
+                mostra("</br>")
+                mostra("A metade é " + resultado2);
+                mostra("</br>")
+                mostra("Olá, " + nome + "! Tudo bem?")
+            </Script>
+        </body>
+</html>
