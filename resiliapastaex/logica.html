@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste</h1>
+    <br>
+    
+    <script>
+        function pulalinha() {
+            document.write("<br>");
+        }
+
+        function mostra(ronaldo) {
+            document.write(ronaldo)
+            pulalinha();
+        }
+
+        var vitorias = parseInt(prompt("Num de vitorias: "));
+        alert(vitorias * 3);
+        var empate = parseInt(prompt("Num de empate: "));
+        var pontos = (vitorias*3) + empate;
+
+        mostra("Os pontos do seu time sao: " + pontos);
+        if (pontos > 28){
+            mostra("Seu time, esta melhor");
+        }
+        if (pontos < 28){
+            mostra("Seu time, esta pior");
+        }
+    </script>
+</body>
+</html>
