@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,5 +7,19 @@
 </head>
 <body>
     <h1>INICIANDO COM DOM</h1>
+    <p>Aqui vai o resultado.</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em javascript.</p>
+    <div id='msg'>Clique em mim.</div>
+
+    <script>
+        var corpo = document.body
+        var p1 = document.getElementsByTagName('p')[1]
+        
+        alert(p1.innerHTML)
+        corpo.style.background = 'red'
+        p1.style.color = 'blue'
+
+        var d = document.querySelector(div.msg)
+    </script>
 </body>
 </html>
