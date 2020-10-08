@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <script>
+               var lista = ['A','B','C','D']; 
+               //array
+               function botao() {
+                    for (var i = 0; i < lista.length; i++) {
+                    var criarbotao = document.createElement("button");
+                    var t = document.createTextNode(lista[i]);
+                    criarbotao.appendChild(t);
+                    document.body.appendChild(criarbotao);
+                    }
+               }
+
+               function mostra(){
+                    alert(JSON.stringify(lista, "", 2))
+               }
+
+               var novo = prompt("Deseja adicionar mais um botao? ");
+                    
+               while (novo == "S"){
+                    lista.push(prompt("Qual o nome do botao? "));
+                    var novo = prompt("Deseja adicionar mais um botao? ");
+                    if (novo == "N"){
+                    break;
+                    }
+               }
+          </script>
+     </head>
+
+     <body onload="botao()"; onClick="mostra()">
+
+     </body>
+</html>
