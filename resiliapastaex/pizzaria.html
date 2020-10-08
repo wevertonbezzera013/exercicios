@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pizzaria</title>
+    </head>
+    <body>
+        <script>
+            function valor(){
+                return (50.00 - 30.00)/8.9;
+            }
+            function valor2(){
+                return 50.00 - 30.00;
+            }
+
+            var pizza = prompt("Qual pizza deseja encomendar? ");
+
+            if (pizza == "p"){
+                var imposto = Math.round(valor());
+                var lucro = Math.round(valor2());
+                document.write("Para a pizza " + pizza + " o lucro líquido é de R$ " + lucro + " e o imposto é de "+ imposto +"%");
+            }
+            else {
+                document.write("Não temos esse sabor! :(");
+            }
+
+        </script>
+    </body>
+</html>
