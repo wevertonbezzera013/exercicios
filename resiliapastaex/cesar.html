@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function cifraComCifraDeCesar( deslocamento, mensagem )
+        {
+            var mensagemEncriptada = "";
+            var resp = [];
+            for (let i = 0; i < mensagem.length; i++) {
+                var dec = mensagem.charCodeAt(i);
+                dec += deslocamento;
+                resp.push(dec);
+                
+            }
+            return resp;
+        }
+
+        function decodeCesar(){
+
+        }
+
+        var mensagemCodificada = decodeCesar(10, "Ola Mundo");
+
+        return mensagemEncriptada;
+    </script>
+</body>
+</html>
