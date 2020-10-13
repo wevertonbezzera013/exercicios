@@ -78,35 +78,33 @@ function clearStatusClass(element) {
 
 const questions = [
   {
-    question: 'What is 2 + 2?',
+    question: 'Acordar e sair de casa?',
     answers: [
-      { text: '4', correct: true },
-      { text: '22', correct: false }
+      { text: 'Não sair de casa e ir aprender a programar.', correct: true },
+      { text: 'Sair de casa e ser corongado.', correct: false }
     ]
   },
   {
-    question: 'Who is the best YouTuber?',
+    question: 'Fazer projetos e exercícios?',
     answers: [
-      { text: 'Web Dev Simplified', correct: true },
-      { text: 'Traversy Media', correct: true },
-      { text: 'Dev Ed', correct: true },
-      { text: 'Fun Fun Function', correct: true }
+      { text: 'Não fazer nada e perder a entrevista de emprego.', correct: false },
+      { text: 'Criar um portifólio, estudar e se dar bem na entrevista.', correct: true },
     ]
   },
   {
-    question: 'Is web development fun?',
+    question: 'O que fazer quando está entediado em casa?',
     answers: [
-      { text: 'Kinda', correct: false },
-      { text: 'YES!!!', correct: true },
-      { text: 'Um no', correct: false },
-      { text: 'IDK', correct: false }
+      { text: 'Programar e aprender coisas novas.', correct: true },
+      { text: 'Jogar videogame.', correct: false },
+      { text: 'Dormir só mais um pouquinho.', correct: false },
+      { text: 'Maratonar série o dia inteiro.', correct: false }
     ]
   },
   {
-    question: 'What is 4 * 2?',
+    question: 'Ricardo quer muito aprender a programar, que curso ele deve fazer?',
     answers: [
-      { text: '6', correct: false },
-      { text: '8', correct: true }
+      { text: 'Culinária na UFRJ', correct: false },
+      { text: 'Resília, o melhor curso do mundo!!!', correct: true }
     ]
   }
 ]
