@@ -19,6 +19,8 @@ body {
     justify-content: center;
     align-items: center;
     background-color: hsl(var(--hue),100%, 20%);
+    box-sizing: border-box;
+    flex-direction: column;
 }
 
 body.correct{
@@ -29,6 +31,19 @@ body.wrong{
     --hue: var(--hue-wrong);
 }
 
+nav {
+    box-sizing: border-box;
+    flex-direction: row-reverse;
+}
+
+.bloco{
+    width: 500%;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
 .container{
     width: 800%;
     max-width: 80%;
