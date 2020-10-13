@@ -7,26 +7,23 @@
 </head>
 <body>
     <script>
-        function cifraComCifraDeCesar( deslocamento, mensagem )
-        {
-            var mensagemEncriptada = "";
-            var resp = [];
-            for (let i = 0; i < mensagem.length; i++) {
-                var dec = mensagem.charCodeAt(i);
-                dec += deslocamento;
-                resp.push(dec);
-                
+        function cifrandoCesar(frase, deslocamento) {
+            var resultado = frase.split("")
+
+            for(i = 0; i<frase.length; i++)
+                var letracriptografada = console.log(frase[i].charCodeAt() + deslocamento)
+
+            if (letracriptografada >= 65 && letracriptografada <= 90) {
+                resultado += frase.fromCharCode(letracriptografada + deslocamento)
+
+            } else if (letracriptografada >= 75 && letracriptografada <=90) {
+                resultado += frase.fromCharCode(letracriptografada - deslocamento)
+
             }
-            return resp;
+
+            return resultado.join("");
         }
-
-        function decodeCesar(){
-
-        }
-
-        var mensagemCodificada = decodeCesar(10, "Ola Mundo");
-
-        return mensagemEncriptada;
+        console.log(cifrandoCesar('ola mundo', 4))
     </script>
 </body>
 </html>
