@@ -1,0 +1,24 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.conteiner{
+    display: flex;
+    flex-direction: column;
+}
+
+.visor{
+    display: flex;
+    flex-direction: column;
+}
+
+.operadores{
+    display: flex;
+    flex-direction: column;
+}
+
+.numeros{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+}
