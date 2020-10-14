@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        faca a criptografia da cifra de Cesar
+
+            -dividir a mensagem em uma lista de letras
+            -criar uma lista numerica vazia
+
+            -passar por todas as letras da mensagem
+                -aplicar o algoritmo de criptografia nas letras
+                    -limite de 26 letras
+                    -utilizar a tabela ascii para fazer a conversao
+
+                -salve a letra criptografada como um numero
+                    -salvar o (numero codificado menos 65 mais o deslocamento lido) o resto pelas 26 letras
+
+            -juntar a palavra codificada
+            -devolver esta palavra codificada
+
+        <script>
+            var mensagem = prompt("Qual a mensagem?");
+            var deslocamento = prompt("Qual o deslocamento?");
+
+            function criptografia(d, m){
+                var listanumerica = [];
+
+                for (var i = 0; i < m.length; i++) {
+                    var letracriptografada = m[i].charCodeAt(0);
+                    letracriptografada += deslocamento;
+                    listanumerica.push(letracriptografada);
+                }
+
+                var palavracodificada = "";
+
+                for (var i = 0; i < listanumerica.length; i++){
+                    palavracodificada += String.fromCharCode(listanumerica[i]);
+                }
+
+                return palavracodificada;
+            }
+
+            console.log(criptografia(mensagem, deslocamento));
+        </script>
+        
+    </body>
+</html>
