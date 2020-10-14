@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+}
+.conteiner{
+    margin-top: 20%;
+    width: 100px;
+    border: solid rgb(201, 209, 133);
+    padding: 50px;
+    background-color: rgb(201, 209, 133);
+}
+
+.numeros{
+    margin: 5px;
+}
