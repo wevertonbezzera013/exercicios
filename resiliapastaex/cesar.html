@@ -7,6 +7,9 @@
 </head>
 <body>
     <script>
+        var mensagem = prompt("Qual a mensagem?");
+        var deslocamento = prompt("Qual o deslocamento?");
+
         function cifrandoCesar(frase, deslocamento) {
             var resultado = frase.split("")
 
@@ -23,7 +26,7 @@
 
             return resultado.join("");
         }
-        console.log(cifrandoCesar('ola mundo', 4))
+        console.log(cifrandoCesar(mensagem, deslocamento))
     </script>
 </body>
 </html>
