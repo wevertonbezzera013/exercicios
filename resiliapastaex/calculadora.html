@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function conta(num1, operador, num2){
+
+            var num1 = parseInt(prompt("Digite um valor: "));
+            var operador = prompt("Operadores(+, -, *, /)\nDigite um operador: ");
+            var num2 = parseInt(prompt("Digite outro valor: "));
+
+            var soma = num1 + num2;
+            var subtra = num1 - num2;
+            var multiplicar = num1 * num2;
+            var divisao = num1 / num2;
+
+            if (operador === '+') {
+                return soma;
+            } else if (operador === '-'){
+                return subtra;
+            } else if (operador === '*'){
+                return multiplicar;
+            }  else if (operador === '/'){
+                return divisao;
+            }
+        }
+        
+        alert(conta());
+    </script>
+</body>
+</html>
