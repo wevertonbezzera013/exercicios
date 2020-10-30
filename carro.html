@@ -7,12 +7,14 @@
 </head>
 <body>
     <script>
-        const carro : {
-            liga true,
-            gasolina : 100,
-            acelere :10,
-            freia: 10,
+        const carro = {
+            combustivel : 100,
+            acelerar : function(){
+                combustivel = this.combustivel
+                return combustivel - 10
+            }
         }
+        console.log(carro.acelerar())
     </script>
 </body>
 </html>
