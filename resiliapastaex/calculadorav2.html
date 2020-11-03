@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="calculadorav2estilo.css">
-    <link rel="stylesheet" href="calculadorav2flexbox.css">
-    <title>Calculadora</title>
-</head>
-<body>
-    <div class="conteiner">
-        <input type="text" name="visor" id="visor" class="visor">
-
-        <div class="numeros" id="numeros">
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-        </div>
-
-        <div class="operadores">
-            <button id="soma">+</button>
-            <button id="sub">-</button>
-            <button id="multi">*</button>
-            <button id="divisao">/</button>
-            <button id="resultado">=</button>
-        </div>
-    </div>
-
-    <script>
-        var numeros = getElementById('numeros');
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="calculadorav2estilo.css">
+        <link rel="stylesheet" href="calculadorav2flexbox.css">
+        <title>Calculadora</title>
+    </head>
+    <body>
+        <h1>CALCULADORA RESILIA</h1>
+        <main>
+            <form action="" name="calc">
+                <div class="conteiner">
+                    <input type="text" name="visor" id="visor" class="visor">
         
-    </script>
-</body>
+                    <div class="numeros" id="numeros">
+                        <input type="button" value="1" class="botaoBorda" onclick="botaoclicado(value)">
+                        <input type="button" value="2" class="botaoBorda" onclick="botaoclicado(value)">
+                        <input type="button" value="3" class="botaoBorda" onclick="botaoclicado(value)">
+                        <input type="button" value="4" class="botaoBorda" onclick="botaoclicado(value)">
+                        <input type="button" value="5" class="botaoBorda" onclick="botaoclicado(value)">
+                        <input type="button" value="6" class="botaoBorda" onclick="botaoclicado(value)">
+                        <input type="button" value="7" class="botaoBorda" onclick="botaoclicado(value)">
+                        <input type="button" value="8" class="botaoBorda" onclick="botaoclicado(value)">
+                        <input type="button" value="9" class="botaoBorda" onclick="botaoclicado(value)">
+                    </div>
+        
+                    <div class="operadores">
+                        <input type="button" value="+" id="sinal" class="botaoBorda" onclick="botaoclicado(value)">
+                        <input type="button" value="-" id="sinal" class="botaoBorda" onclick="botaoclicado(value)">
+                        <input type="button" value="*" id="sinal" class="botaoBorda" onclick="botaoclicado(value)">
+                        <input type="button" value="/" id="sinal" class="botaoBorda" onclick="botaoclicado(value)">
+                        <input type="button" value="=" id="resultado" class="botaoBorda" onclick="calcula()">
+                        <input type="button" value="C" id="resultado" class="botaoBorda" onclick="reseta(value)">
+                    </div>
+                </div>
+            </form>
+            <script language="JavaScript" src="calculadorav2.js"></script>
+        </main>
+        
+    </body>
 </html>
