@@ -22,3 +22,11 @@ h1{
     background-color: yellow;
     border-radius: 5px;
 }
+
+.conteiner:hover{
+    padding: 60px
+}
+
+.botaoBorda:hover{
+    border: 10px;
+}
