@@ -1,0 +1,83 @@
+body{
+    background-color: black;
+}
+
+#caixa{
+    color: limegreen;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#caixa:hover{
+    font-size: 51px;
+}
+
+#link{
+    color: limegreen;
+    transition: all 0.5s;
+}
+
+#link:hover{
+    color: rgb(34, 151, 34);
+    transition: all 0.5s;
+}
+
+#relogio{
+    text-align: center;
+    font-size: 100px;
+    border: solid 20px limegreen;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: limegreen;
+    background-color: black;
+    margin-top: 200px;
+    transition: all 0.5s;
+    margin-bottom: 250px;
+}
+
+#relogio:hover{
+    border: solid 20px rgb(34, 151, 34);
+    color: rgb(34, 151, 34);
+    transition: all 0.5s;
+}
+
+#social{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: limegreen;
+    transition: all 0.5s;
+    font-size: 50px;
+}
+
+#social a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: limegreen;
+    transition: all 0.5s;
+    font-size: 50px;
+}
+
+li:hover #LinkedIn{
+    color: rgb(34, 151, 34);
+    transition: all 0.5s;
+    font-size: 51px;
+}
+
+li:hover #Instagram{
+    color: rgb(34, 151, 34);
+    transition: all 0.5s;
+    font-size: 51px;
+}
+
+li:hover #Youtube{
+    color: rgb(34, 151, 34);
+    transition: all 0.5s;
+    font-size: 51px;
+}
+
+li:hover #GitHub{
+    color: rgb(34, 151, 34);
+    transition: all 0.5s;
+    font-size: 51px;
+}
