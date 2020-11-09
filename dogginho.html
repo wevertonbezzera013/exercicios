@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class cachorro{
+
+            patas = "";
+            pelo = "";
+            cor = "";
+            constructor(pataCustomizada, peloCustomizado, corCustomizada){
+                this.patas = pataCustomizada
+                this.pelo = peloCustomizado
+                this.cor = corCustomizada
+
+                if(pataCustomizada !== undefined)
+                    this.patas = pataCustomizada;
+                if(peloCustomizado !== undefined)
+                    this.pelo = peloCustomizado;
+                if(corCustomizada !== undefined)
+                    this.cor = corCustomizada;
+            }
+
+            LATE(){
+                console.log("Au, au")
+            }
+
+            correr(){
+                if(this.patas == 4)
+                console.log("correr")
+            }
+        }
+
+        let cao = new cachorro("4", "Longo", "preta")
+
+        console.log(cao)
+        cao.LATE()
+        cao.correr()
+    </script>
+</body>
+</html>
