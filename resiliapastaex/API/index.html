@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/api-github.css">
+    <link rel="stylesheet" href="styles/style-global.css">
+    <title>GitHub Developer</title>
+</head>
+<header class="cabeca">
+    <a href="https://github.com/"><img class="logo" src="img/kisspng-github-pages-logo-repository-fork-github-logo-1-magentys-5b69de71b51265.8586076615336648817417.png" alt="Logo"></a>
+    <div class="search">
+        <input type="text" id="user-input" placeholder="Digite um usuário">
+        <button class="botao" id="user-btn" onclick="getRepoList()">&#128269; </button>
+    </div>
+</header>
+
+<body>
+    <div id="container"></div>
+
+    <div id="containerDois">
+        <p class="busque">Busque por um usuario! :)</p> 
+        <img class="logoDois" src="img/Octocat.png">
+    </div>
+
+</body>
+<footer>
+    <span class="copyright">Copyright &copy; 2020, API GitHub Developer</span>
+</footer>
+
+
+<script src="script/api-github.js"></script>
+
+</html>
