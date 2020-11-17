@@ -1,0 +1,129 @@
+/* HEADER */
+.cabeca {
+    display: flex;
+    align-items: center;
+    background: var(--header);
+    padding: 11px 16px;
+
+    margin-bottom: 12px;
+}
+
+.logo {
+    fill: var(--logo);
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+.search {
+    padding-left: 16px;
+    width: 30%;
+
+    display: flex;
+}
+
+.search input {
+    Background: var(--search);
+    outline: 0;
+    border-radius: 6px;
+    padding: 7px 12px;
+    width: 90%;
+}
+
+.botao {
+    color: var(--gray);
+
+    width: 20%;
+
+    cursor: pointer;
+}
+
+/* BODY */
+
+body {
+    background-color: var(--other-language);
+    color: #333;
+     justify-content: space-between;
+}
+
+h1 {
+    margin: 0 0 1% 0;
+    font-size: 50px;
+}
+
+form {
+    justify-content: center;
+    display: flex;
+}
+
+
+#container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 2%;
+}
+
+
+
+.total-repo {
+    margin-top: 2%;
+}
+
+.div-table {
+    width: 55%;
+    height: 20%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: inline-flex;
+    height: 35rem;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--logo);
+}
+
+
+a {
+    color: #303030;
+    text-decoration: none;
+}
+
+.table-name {
+    border-right: 1px solid #ddd;
+}
+
+.divUserPhoto {
+    display: flex;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    padding: 1%;
+    flex-direction: column;
+}
+  
+.divLegendPhoto {
+    display: block;
+    text-align: center;
+    margin: 50px;
+}
+
+
+
+footer{
+    width: 100%;
+    padding: 1%;
+    background-color: var(--black);
+    color: white;
+    position:absolute;
+    bottom:0;
+    text-align: center;
+}
+
+footer span {
+    color: var(--logo);
+}
