@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Resilia</title>
+    <link rel="stylesheet" href="estilo_resilia.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    <header>
+        <h1><img src="logo_amarela.webp" alt=""></h1>
+        <div class="caixa">
+            <nav>
+                <ul>
+                    <li><a href="https://www.resilia.work/">Home</a></li>
+                    <li><a href="https://www.resilia.work/sobre">Sobre</a></li>
+                    <li><a href="https://www.resilia.work/paraempresas">Para empresas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="caixa">
+        <form action="#" method="POST">
+        <fieldset>
+            <fieldset>
+                <div class="campo">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome">
+                </div>
+                <div class="campo">
+                    <label for="snome">Sobrenome</label>
+                    <input type="text" name="snome" id="snome">
+                </div>
+            </fieldset>
+
+            <div class="campo">
+                <label class="checkbox">
+                    <input type="radio" name="sexo" value="masculino">Masculino
+                </label>
+        
+                <label for="checkbox">
+                    <input type="radio" name="sexo" value="feminino">Feminino
+                </label>
+            </div>
+
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <input type="text" id="email" name="email" style="width: 20em" value="">
+            </div>
+
+            <div class="telefone">
+                <label for="telefone">Telefone</label>
+                <input type="text" class="form-control phone-ddd-mask" placeholder="Ex.: (00) 0000-0000">
+            </div>
+
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" id="cidade" name="cidade" style="width: 10em" value="">
+                </div>
+                <div class="campo">
+                    <label for="estado">Estado</label>
+                    <select name="estado" id="estado">
+                        <option value="">--</option>
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AP">AP</option>
+                        <option value="AM">AM</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MT">MT</option>
+                        <option value="MS">MS</option>
+                        <option value="MG">MG</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PR">PR</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RS">RS</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="SC">SC</option>
+                        <option value="SP">SP</option>
+                        <option value="SE">SE</option>
+                        <option value="TO">TO</option>
+                        <option value="DF">DF</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="campo">
+                    <label for="cpf">CPF:</label>
+                    <input type="text" class="form-control cpf-mask" placeholder="Ex.: 000.000.000-00">
+                </div>
+                <div>
+                    <label for="cep">CEP:</label>
+                    <input type="text" class="form-control cep-mask" placeholder="Ex.: 00000-000">
+                </div>
+                <div>
+
+                </div>
+            </fieldset>
+
+            <div class="campo">
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" rows="6" style="width: 20em;"></textarea>
+            </div>
+
+            <div class="campo">
+                <label>Newsletter</label>
+                <label>
+                    <input type="checkbox" name="newsletter" value="1">Gostaria de receber notícias sobre o curso?
+                </label>
+            </div>
+            
+            <button type="submit" name="submit">Enviar</button>
+        </fieldset>
+        </form>
+    </div>
+    <footer>
+        <img src="logo_amarela.webp" alt="">
+        <p class="copy">&copy;Copyright Resilia</p>
+    </footer>
+</body>
+</html>
