@@ -1,0 +1,1 @@
+setTimeout(nomeDaFunc => {console.log("Olá com delay de 5s");}, 5000);
